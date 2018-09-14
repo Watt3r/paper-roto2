@@ -23,6 +23,12 @@ var restore_keys = function(lang) {
   view_key_widget.innerHTML = keys.view.sec;
 };
 
+var show_restore = function() {
+  document.getElementById("restore").style.display = "block";
+  document.getElementById("generate").style.display = "none";
+  document.getElementById("step2").style.display = "none";
+};
+
 var genwallet = function(lang) {
   var spend_key_widget = document.getElementById("spend_key_widget");
   var view_key_widget = document.getElementById("view_key_widget");
